@@ -1,6 +1,5 @@
 import discord
 import random
-from oyun import yazi_tura
 
 # ayricaliklar (intents) değişkeni botun ayrıcalıklarını depolayacak
 intents = discord.Intents.default()
@@ -29,11 +28,9 @@ async def on_message(message):
         await message.channel.send("<:mc:1277625358845214750>")
     elif message.content.startswith('//creator'):
         await message.channel.send("My Creator is kuxst.com")
-    elif message.content.startswith('//coin'):
-        await message.channel.send(yazi_tura())
     elif message.content.startswith('sa'):
         await message.channel.send("Aleyküm Selam Mümin kardeşim")
     elif message.content.startswith('help TenZics'):
-        await message.channel.send("||//merhaba  |  //bye  |  //EN BÜYÜK  |  //sayı  |  //en iyi oyun  |  //creator  |  //coin  |  sa ||")                           
+        await message.channel.send("||//merhaba  |  //bye  |  //EN BÜYÜK  |  //sayı  |  //en iyi oyun  |  //creator  |  sa ||")                           
 
 client.run("bot TOKEN")
